@@ -1,78 +1,90 @@
 <!DOCTYPE html>
 <html lang="pt-br">
+
 <head>
   <meta charset="UTF-8" />
   <title>Clínica Odontológica | Dentista Especialista em Sorriso e Saúde</title>
-  <meta name="description" content="Dentista especializado em estética, implantes e saúde bucal. Atendimento humanizado, tecnologia moderna e agendamento rápido pelo WhatsApp." />
-  <meta name="keywords" content="dentista, clínica odontológica, implante dentário, estética dental, clareamento, ortodontia" />
+  <meta name="description"
+    content="Dentista especializado em estética, implantes e saúde bucal. Atendimento humanizado, tecnologia moderna e agendamento rápido pelo WhatsApp." />
+  <meta name="keywords"
+    content="dentista, clínica odontológica, implante dentário, estética dental, clareamento, ortodontia" />
   <meta name="author" content="Lucas Araujo" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+  <link rel="icon" href="favicon.png" />
   <link rel="stylesheet" href="style.css" />
 </head>
 
 <body>
 
-<header>
-  <div class="container topbar">
-    <div class="logo">🦷 Clínica Odontológica</div>
-    <nav>
-      <a href="#servicos">Serviços</a>
-      <a href="#sobre">Sobre</a>
-      <a href="#contato">Contato</a>
-      <a href="../../index.html">← Voltar</a>
-    </nav>
-  </div>
-</header>
+  <header>
+    <div class="container topbar">
+      <div class="logo">🦷 Clínica Odontológica</div>
 
-<section class="hero">
-  <h1>Seu Sorriso, Nossa Prioridade</h1>
-  <p>
-    Atendimento odontológico completo com foco em estética, saúde bucal e bem-estar.
-    Tecnologia, conforto e cuidado em cada detalhe.
-  </p>
-  <a class="cta" href="https://wa.me/5500000000000" target="_blank">📲 Agendar Consulta</a>
-</section>
+      <button class="menu-toggle" id="menuToggle">☰</button>
 
-<main class="container">
-
-  <section id="servicos">
-    <h2 class="section-title">Nossos Serviços</h2>
-    <div class="grid">
-      <div class="card">
-        <h3>😁 Clareamento Dental</h3>
-        <p>Deixe seu sorriso mais branco e saudável com técnicas modernas e seguras.</p>
-      </div>
-      <div class="card">
-        <h3>🦷 Implantes</h3>
-        <p>Recupere a função e a estética do seu sorriso com implantes de alta qualidade.</p>
-      </div>
-      <div class="card">
-        <h3>🪥 Ortodontia</h3>
-        <p>Alinhamento dos dentes com conforto e acompanhamento especializado.</p>
-      </div>
+      <nav id="navMenu">
+        <a href="#servicos">Serviços</a>
+        <a href="#sobre">Sobre</a>
+        <a href="#contato">Contato</a>
+        <a href="../../index.html">← Voltar</a>
+      </nav>
     </div>
-  </section>
+  </header>
 
-  <section id="sobre">
-    <h2 class="section-title">Sobre a Clínica</h2>
-    <p class="about">
-      Somos uma <strong>Clínica Odontológica</strong> focada em excelência, atendimento humanizado
-      e resultados duradouros. Nossa missão é transformar sorrisos com ética, técnica e cuidado.
+  <section class="hero reveal">
+    <h1>Seu Sorriso, Nossa Prioridade</h1>
+    <p>
+      Atendimento odontológico completo com foco em estética, saúde bucal e bem-estar.
+      Tecnologia, conforto e cuidado em cada detalhe.
     </p>
+    <a class="cta" href="https://wa.me/5500000000000" target="_blank">📲 Agendar Consulta</a>
   </section>
 
-  <section id="contato" style="text-align:center; margin-top:3rem;">
-    <h2 class="section-title">Agende sua consulta</h2>
-    <p class="about">Clique no botão abaixo e fale com a nossa equipe agora mesmo.</p>
-    <br />
-    <a class="cta" href="https://wa.me/5500000000000" target="_blank">💬 Falar no WhatsApp</a>
-  </section>
+  <main class="container">
 
-</main>
+    <section id="servicos" class="reveal">
+      <h2 class="section-title">Nossos Serviços</h2>
+      <div class="grid">
+        <div class="card">
+          <h3>😁 Clareamento Dental</h3>
+          <p>Deixe seu sorriso mais branco e saudável com técnicas modernas e seguras.</p>
+        </div>
+        <div class="card">
+          <h3>🦷 Implantes</h3>
+          <p>Recupere a função e a estética do seu sorriso com implantes de alta qualidade.</p>
+        </div>
+        <div class="card">
+          <h3>🪥 Ortodontia</h3>
+          <p>Alinhamento dos dentes com conforto e acompanhamento especializado.</p>
+        </div>
+      </div>
+    </section>
 
-<footer>
-  © 2026 · Template Demo – Dentista · Desenvolvido por Lucas Araujo
-</footer>
+    <section id="sobre" class="reveal">
+      <h2 class="section-title">Sobre a Clínica</h2>
+      <p class="about">
+        Somos uma <strong>Clínica Odontológica</strong> focada em excelência, atendimento humanizado
+        e resultados duradouros. Nossa missão é transformar sorrisos com ética, técnica e cuidado.
+      </p>
+    </section>
 
+    <section id="contato" class="reveal" style="text-align:center; margin-top:3rem;">
+      <h2 class="section-title">Agende sua consulta</h2>
+      <p class="about">Clique no botão abaixo e fale com a nossa equipe agora mesmo.</p>
+      <br />
+      <a class="cta" href="https://wa.me/5500000000000" target="_blank">💬 Falar no WhatsApp</a>
+    </section>
+
+  </main>
+
+  <a href="https://wa.me/5500000000000" target="_blank" class="whatsapp-float">💬</a>
+
+  <footer>
+    © 2026 · Template Demo – Dentista · Desenvolvido por Lucas Araujo
+  </footer>
+
+  <script src="script.js"></script>
 </body>
+
 </html>
