@@ -167,7 +167,12 @@ nav {
 }
 
 footer {
+    border-top: 1px solid var(--border);
+    color: var(--muted);
+    font-size: .85rem;
     text-align: center;
+    padding: 2rem 1rem;
+    margin-top: 3rem;
 }
 
 @media (max-width: 768px) {
