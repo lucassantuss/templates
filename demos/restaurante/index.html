@@ -1,78 +1,85 @@
 <!DOCTYPE html>
 <html lang="pt-br">
+
 <head>
   <meta charset="UTF-8" />
   <title>Restaurante & Delivery | Peça Online com Rapidez e Qualidade</title>
-  <meta name="description" content="Restaurante com delivery rápido e comida de qualidade. Veja nosso cardápio, faça seu pedido pelo WhatsApp e receba em casa." />
-  <meta name="keywords" content="restaurante delivery, pedir comida online, cardápio digital, restaurante perto de mim, delivery rápido" />
+  <meta name="description"
+    content="Restaurante com delivery rápido e comida de qualidade. Veja nosso cardápio e peça pelo WhatsApp." />
+  <meta name="keywords" content="restaurante delivery, pedir comida online, cardápio digital, delivery rápido" />
   <meta name="author" content="Lucas Araujo" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+  <link rel="icon" href="favicon.png" />
   <link rel="stylesheet" href="style.css" />
 </head>
 
 <body>
 
-<header>
-  <div class="container topbar">
-    <div class="logo">🍔 Restaurante & Delivery</div>
-    <nav>
-      <a href="#cardapio">Cardápio</a>
-      <a href="#sobre">Sobre</a>
-      <a href="#contato">Pedido</a>
-      <a href="../../index.html">← Voltar</a>
-    </nav>
-  </div>
-</header>
+  <header>
+    <div class="container topbar">
+      <div class="logo">🍔 Restaurante & Delivery</div>
 
-<section class="hero">
-  <h1>Sabor que Chega Quentinho até Você</h1>
-  <p>
-    Comida de qualidade, entrega rápida e um cardápio que conquista no primeiro pedido.
-    Peça agora pelo WhatsApp e receba em casa.
-  </p>
-  <a class="cta" href="https://wa.me/5500000000000" target="_blank">📲 Fazer Pedido</a>
-</section>
+      <button class="menu-toggle" id="menuToggle">☰</button>
 
-<main class="container">
-
-  <section id="cardapio">
-    <h2 class="section-title">Destaques do Cardápio</h2>
-    <div class="grid">
-      <div class="card">
-        <h3>🍔 Hambúrguer Artesanal</h3>
-        <p>Pão brioche, carne suculenta, queijo e molho da casa.</p>
-      </div>
-      <div class="card">
-        <h3>🍕 Pizza Especial</h3>
-        <p>Massa leve, ingredientes frescos e muito sabor.</p>
-      </div>
-      <div class="card">
-        <h3>🍟 Combos Família</h3>
-        <p>Opções completas para dividir com quem você ama.</p>
-      </div>
+      <nav id="navMenu">
+        <a href="#cardapio">Cardápio</a>
+        <a href="#sobre">Sobre</a>
+        <a href="#contato">Pedido</a>
+        <a href="../../index.html">← Voltar</a>
+      </nav>
     </div>
+  </header>
+
+  <section class="hero reveal">
+    <h1>Sabor que Chega Quentinho até Você</h1>
+    <p>Comida de qualidade, entrega rápida e um cardápio que conquista no primeiro pedido.</p>
+    <a class="cta" href="https://wa.me/5500000000000" target="_blank">📲 Fazer Pedido</a>
   </section>
 
-  <section id="sobre">
-    <h2 class="section-title">Sobre o Restaurante</h2>
-    <p class="about">
-      Somos um restaurante focado em oferecer <strong>qualidade, rapidez e sabor</strong>.
-      Nosso objetivo é levar até você uma experiência deliciosa, do preparo à entrega.
-    </p>
-  </section>
+  <main class="container">
 
-  <section id="contato" style="text-align:center; margin-top:3rem;">
-    <h2 class="section-title">Pronto para pedir?</h2>
-    <p class="about">Clique no botão abaixo e faça seu pedido agora mesmo.</p>
-    <br />
-    <a class="cta" href="https://wa.me/5500000000000" target="_blank">🚀 Pedir no WhatsApp</a>
-  </section>
+    <section id="cardapio" class="reveal">
+      <h2 class="section-title">Destaques do Cardápio</h2>
+      <div class="grid">
+        <div class="card">
+          <h3>🍔 Hambúrguer Artesanal</h3>
+          <p>Pão brioche, carne suculenta e molho da casa.</p>
+        </div>
+        <div class="card">
+          <h3>🍕 Pizza Especial</h3>
+          <p>Massa leve e ingredientes frescos.</p>
+        </div>
+        <div class="card">
+          <h3>🍟 Combos Família</h3>
+          <p>Opções para dividir com quem você ama.</p>
+        </div>
+      </div>
+    </section>
 
-</main>
+    <section id="sobre" class="reveal">
+      <h2 class="section-title">Sobre o Restaurante</h2>
+      <p class="about">Qualidade, rapidez e muito sabor direto na sua casa.</p>
+    </section>
 
-<footer>
-  © 2026 · Template Demo – Restaurante / Delivery · Desenvolvido por Lucas Araujo
-</footer>
+    <section id="contato" class="reveal" style="text-align:center;">
+      <h2 class="section-title">Pronto para pedir?</h2>
+      <p class="about">Clique no botão abaixo e peça agora.</p>
+      <a class="cta" href="https://wa.me/5500000000000" target="_blank">🚀 Pedir no WhatsApp</a>
+    </section>
 
+  </main>
+
+  <a href="https://wa.me/5500000000000" target="_blank" class="whatsapp-float" id="whatsappBtn">
+    💬
+    <span class="tooltip">Falar no WhatsApp</span>
+  </a>
+
+  <footer>
+    © 2026 · Template Demo – Restaurante / Delivery · Desenvolvido por Lucas Araujo
+  </footer>
+
+  <script src="script.js"></script>
 </body>
+
 </html>
