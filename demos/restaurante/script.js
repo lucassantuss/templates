@@ -1,23 +1,23 @@
-// Menu mobile
-const menuToggle = document.getElementById("menuToggle");
-const navMenu = document.getElementById("navMenu");
+// Menu Mobile
+const toggle = document.querySelector('.menu-toggle');
+const menu = document.querySelector('.menu');
 
-menuToggle.addEventListener("click", () => {
-    navMenu.classList.toggle("active");
+toggle.addEventListener('click', () => {
+    menu.classList.toggle('open');
 });
 
-// Reveal on scroll
-const reveals = document.querySelectorAll(".reveal");
-window.addEventListener("scroll", () => {
+// Reveal on Scroll
+const reveals = document.querySelectorAll('.reveal');
+
+function revealOnScroll() {
     reveals.forEach(el => {
-        const top = el.getBoundingClientRect().top;
-        if (top < window.innerHeight - 100) el.classList.add("active");
+        const windowHeight = window.innerHeight;
+        const elementTop = el.getBoundingClientRect().top;
+        if (elementTop < windowHeight - 100) {
+            el.classList.add('active');
+        }
     });
-});
+}
 
-// Tooltip WhatsApp
-const whatsappBtn = document.getElementById("whatsappBtn");
-whatsappBtn.addEventListener("click", () => {
-    whatsappBtn.classList.add("show-tooltip");
-    setTimeout(() => whatsappBtn.classList.remove("show-tooltip"), 1500);
-});
+window.addEventListener('scroll', revealOnScroll);
+revealOnScroll();
