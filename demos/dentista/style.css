@@ -91,6 +91,14 @@ nav {
     border: 1px solid var(--border);
     border-radius: 16px;
     padding: 1.4rem;
+    background: #020617;
+    transition: transform .3s ease, box-shadow .3s ease, border-color .3s ease;
+}
+
+.card:hover {
+    transform: translateY(-8px) scale(1.02);
+    border-color: var(--primary);
+    box-shadow: 0 15px 35px rgba(56, 189, 248, 0.25);
 }
 
 .whatsapp-float {
@@ -103,6 +111,12 @@ nav {
     padding: .7rem .9rem;
     border-radius: 50%;
     box-shadow: 0 8px 20px rgba(0, 0, 0, .4);
+    transition: transform .25s ease, box-shadow .25s ease;
+}
+
+.whatsapp-float:hover {
+    transform: scale(1.15) rotate(5deg);
+    box-shadow: 0 12px 30px rgba(34, 197, 94, 0.5);
 }
 
 .reveal {
@@ -114,6 +128,10 @@ nav {
 .reveal.active {
     opacity: 1;
     transform: translateY(0);
+}
+
+footer {
+    text-align: center;
 }
 
 @media (max-width: 768px) {
