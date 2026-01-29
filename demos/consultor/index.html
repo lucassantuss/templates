@@ -20,7 +20,10 @@
   <header>
     <div class="container topbar">
       <div class="logo">👨‍💼 Consultoria Estratégica</div>
-      <nav>
+
+      <button class="menu-toggle" aria-label="Abrir menu">☰</button>
+
+      <nav class="menu">
         <a href="#servicos">Serviços</a>
         <a href="#vantagens">Diferenciais</a>
         <a href="#sobre">Sobre</a>
@@ -30,7 +33,7 @@
     </div>
   </header>
 
-  <section class="hero">
+  <section class="hero reveal">
     <h1>Estratégia, Clareza e Resultado</h1>
     <p>
       Ajudo empresas e profissionais a tomarem decisões melhores, crescerem com método
@@ -41,7 +44,7 @@
 
   <main class="container">
 
-    <section id="servicos">
+    <section id="servicos" class="reveal">
       <h2 class="section-title">Como posso te ajudar</h2>
       <div class="grid">
         <div class="card">
@@ -59,7 +62,7 @@
       </div>
     </section>
 
-    <section id="vantagens">
+    <section id="vantagens" class="reveal">
       <h2 class="section-title">Por que escolher minha consultoria?</h2>
       <div class="grid">
         <div class="card">
@@ -77,7 +80,7 @@
       </div>
     </section>
 
-    <section id="sobre">
+    <section id="sobre" class="reveal">
       <h2 class="section-title">Sobre o Consultor</h2>
       <p class="about">
         Sou <strong>consultor especializado em estratégia, negócios e performance</strong>,
@@ -86,7 +89,7 @@
       </p>
     </section>
 
-    <section id="contato" class="cta-section">
+    <section id="contato" class="cta-section reveal">
       <h2 class="section-title">Vamos conversar?</h2>
       <p class="about">Fale agora comigo e comece a estruturar seu crescimento.</p>
       <br />
@@ -99,8 +102,12 @@
     © 2026 · Template Demo – Consultor Premium · Desenvolvido por Lucas Araujo
   </footer>
 
-  <a class="whatsapp-float" href="https://wa.me/5500000000000" target="_blank">💬</a>
+  <a class="whatsapp-float" href="https://wa.me/5500000000000" target="_blank">
+    💬
+    <span class="tooltip">Fale comigo</span>
+  </a>
 
+  <script src="script.js"></script>
 </body>
 
 </html>

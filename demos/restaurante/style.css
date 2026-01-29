@@ -17,9 +17,9 @@ html {
 }
 
 body {
-    font-family: system-ui;
+    font-family: system-ui, sans-serif;
     background: radial-gradient(circle at top, #020617, #020617);
-    color: var(--text)
+    color: var(--text);
 }
 
 a {
@@ -30,7 +30,7 @@ a {
 .container {
     max-width: 1150px;
     margin: auto;
-    padding: 1.25rem
+    padding: 1.25rem;
 }
 
 header {
@@ -38,13 +38,13 @@ header {
     top: 0;
     background: rgba(2, 6, 23, .9);
     border-bottom: 1px solid var(--border);
-    z-index: 10
+    z-index: 10;
 }
 
 .topbar {
     display: flex;
     justify-content: space-between;
-    align-items: center
+    align-items: center;
 }
 
 .menu-toggle {
@@ -52,17 +52,17 @@ header {
     background: none;
     border: none;
     color: #fff;
-    font-size: 1.5rem
+    font-size: 1.5rem;
 }
 
 nav {
     display: flex;
-    gap: 1rem
+    gap: 1rem;
 }
 
 .hero {
     text-align: center;
-    padding: 4rem 1rem
+    padding: 4rem 1rem;
 }
 
 .cta {
@@ -71,42 +71,42 @@ nav {
     padding: .75rem 1.3rem;
     border-radius: 10px;
     font-weight: 700;
-    transition: .25s
+    transition: .25s;
 }
 
 .cta:hover {
     transform: translateY(-4px) scale(1.04);
-    box-shadow: 0 12px 25px rgba(249, 115, 22, .4)
+    box-shadow: 0 12px 25px rgba(249, 115, 22, .4);
 }
 
 .grid {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
     gap: 1.5rem;
-    margin: 3rem 0
+    margin: 3rem 0;
 }
 
 .card {
     border: 1px solid var(--border);
     border-radius: 16px;
     padding: 1.4rem;
-    transition: .3s
+    transition: .3s;
 }
 
 .card:hover {
     transform: translateY(-8px) scale(1.02);
-    box-shadow: 0 15px 35px rgba(249, 115, 22, .3)
+    box-shadow: 0 15px 35px rgba(249, 115, 22, .3);
 }
 
 .reveal {
     opacity: 0;
     transform: translateY(30px);
-    transition: .6s
+    transition: .6s;
 }
 
 .reveal.active {
     opacity: 1;
-    transform: translateY(0)
+    transform: translateY(0);
 }
 
 .whatsapp-float {
@@ -117,7 +117,7 @@ nav {
     color: #052e16;
     padding: .7rem .9rem;
     border-radius: 50%;
-    font-size: 1.5rem
+    font-size: 1.5rem;
 }
 
 .tooltip {
@@ -128,11 +128,11 @@ nav {
     background: #020617;
     padding: .4rem .7rem;
     border-radius: 6px;
-    border: 1px solid var(--border)
+    border: 1px solid var(--border);
 }
 
 .whatsapp-float.show-tooltip .tooltip {
-    opacity: 1
+    opacity: 1;
 }
 
 footer {
@@ -157,7 +157,7 @@ footer {
         right: 20px;
         background: #020617;
         padding: 1rem;
-        border-radius: 12px
+        border-radius: 12px;
     }
 
     nav.active {

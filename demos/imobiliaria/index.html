@@ -20,7 +20,10 @@
   <header>
     <div class="container topbar">
       <div class="logo">🏠 Imobiliária Premium</div>
-      <nav>
+
+      <button class="menu-toggle" aria-label="Abrir menu">☰</button>
+
+      <nav class="menu">
         <a href="#imoveis">Imóveis</a>
         <a href="#vantagens">Vantagens</a>
         <a href="#sobre">Sobre</a>
@@ -30,7 +33,7 @@
     </div>
   </header>
 
-  <section class="hero">
+  <section class="hero reveal">
     <h1>O Imóvel Perfeito Está Aqui</h1>
     <p>
       Compra, venda e aluguel com atendimento exclusivo e imóveis selecionados.
@@ -41,7 +44,7 @@
 
   <main class="container">
 
-    <section id="imoveis">
+    <section id="imoveis" class="reveal">
       <h2 class="section-title">Destaques</h2>
       <div class="grid">
         <div class="card">
@@ -59,7 +62,7 @@
       </div>
     </section>
 
-    <section id="vantagens">
+    <section id="vantagens" class="reveal">
       <h2 class="section-title">Por que escolher a gente?</h2>
       <div class="grid">
         <div class="card">
@@ -77,7 +80,7 @@
       </div>
     </section>
 
-    <section id="sobre">
+    <section id="sobre" class="reveal">
       <h2 class="section-title">Sobre a Imobiliária</h2>
       <p class="about">
         Atuamos com foco em <strong>confiança, resultado e experiência do cliente</strong>.
@@ -85,7 +88,7 @@
       </p>
     </section>
 
-    <section id="contato" class="cta-section">
+    <section id="contato" class="cta-section reveal">
       <h2 class="section-title">Pronto para encontrar seu imóvel?</h2>
       <p class="about">Fale agora com um corretor especialista.</p>
       <br />
@@ -98,8 +101,12 @@
     © 2026 · Template Demo – Imobiliária Premium · Desenvolvido por Lucas Araujo
   </footer>
 
-  <a class="whatsapp-float" href="https://wa.me/5500000000000" target="_blank">💬</a>
+  <a class="whatsapp-float" href="https://wa.me/5500000000000" target="_blank">
+    💬
+    <span class="tooltip">Fale com um corretor</span>
+  </a>
 
+  <script src="script.js"></script>
 </body>
 
 </html>
