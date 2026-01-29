@@ -22,3 +22,15 @@ function revealOnScroll() {
 
 window.addEventListener("scroll", revealOnScroll);
 revealOnScroll();
+
+const whatsappBtn = document.getElementById("whatsappBtn");
+
+if (whatsappBtn) {
+  whatsappBtn.addEventListener("click", () => {
+    whatsappBtn.classList.add("show-tooltip");
+
+    setTimeout(() => {
+      whatsappBtn.classList.remove("show-tooltip");
+    }, 1500);
+  });
+}
