@@ -6,14 +6,16 @@ toggle.addEventListener('click', () => {
     menu.classList.toggle('open');
 });
 
-// Reveal on Scroll
+// Reveal on scroll
 const reveals = document.querySelectorAll('.reveal');
 
 function revealOnScroll() {
     reveals.forEach(el => {
         const windowHeight = window.innerHeight;
         const elementTop = el.getBoundingClientRect().top;
-        if (elementTop < windowHeight - 100) {
+        const visible = 100;
+
+        if (elementTop < windowHeight - visible) {
             el.classList.add('active');
         }
     });

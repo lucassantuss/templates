@@ -21,9 +21,9 @@
     <div class="container topbar">
       <div class="logo">🍔 Restaurante & Delivery</div>
 
-      <button class="menu-toggle" id="menuToggle">☰</button>
+      <button class="menu-toggle" aria-label="Abrir menu">☰</button>
 
-      <nav id="navMenu">
+      <nav class="menu">
         <a href="#cardapio">Cardápio</a>
         <a href="#sobre">Sobre</a>
         <a href="#contato">Pedido</a>
@@ -66,22 +66,23 @@
       </p>
     </section>
 
-    <section id="contato" class="reveal" style="text-align:center;">
+    <section id="contato" class="cta-section reveal">
       <h2 class="section-title">Pronto para pedir?</h2>
       <p class="about">Clique abaixo e faça seu pedido agora mesmo pelo WhatsApp.</p>
+      <br />
       <a class="cta" href="https://wa.me/5500000000000" target="_blank">🚀 Pedir Agora</a>
     </section>
 
   </main>
 
-  <a href="https://wa.me/5500000000000" target="_blank" class="whatsapp-float" id="whatsappBtn">
-    💬
-    <span class="tooltip">Fazer Pedido</span>
-  </a>
-
   <footer>
     © 2026 · Template Demo – Restaurante / Delivery · Desenvolvido por Lucas Araujo
   </footer>
+
+  <a class="whatsapp-float" href="https://wa.me/5500000000000" target="_blank">
+    💬
+    <span class="tooltip">Fazer Pedido</span>
+  </a>
 
   <script src="script.js"></script>
 </body>
